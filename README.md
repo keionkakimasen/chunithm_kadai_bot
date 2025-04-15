@@ -1,0 +1,1 @@
+CHUNITHMの課題曲をdiscordで発表します
