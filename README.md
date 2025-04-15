@@ -19,9 +19,9 @@ CHUNITHMの課題曲をdiscordで発表します
 
 
 # 使い方
-- /課題曲 <const>
+- `/課題曲 <const>`
   - constの定数の譜面が選ばれる
   - const = 0でMAS,ULTから乱択
-- /更新
+- `/更新`
   - 定義のファイルを更新する
   - Discord上で応答を確認できない 
