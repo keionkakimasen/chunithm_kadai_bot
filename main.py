@@ -1,5 +1,6 @@
 import discord
 import requests
+from pathlib import Path
 from bs4 import BeautifulSoup
 import json
 import random
@@ -91,7 +92,11 @@ async def ping(ctx: discord.ApplicationContext):
       image_data = requests.get(uri).content
       filename = uri[uri.rfind('/') + 1:]
       yml[title_text] = filename
-        
+      
+      #すでにある場合はスキップ
+      if(Path('./images').glob(filename) != []):
+        continue
+      
       with open(f'./images/{filename}', mode='wb') as f:
         f.write(image_data)
       
